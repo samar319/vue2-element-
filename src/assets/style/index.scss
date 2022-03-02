@@ -1,0 +1,8 @@
+// scss 文件入口
+@import './layout/main.scss';
+
+*,
+*::after,
+*::before {
+  box-sizing: border-box;
+}

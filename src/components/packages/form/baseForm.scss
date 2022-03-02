@@ -1,0 +1,18 @@
+.sz-form {
+  padding: 0 10px;
+  .el-input,
+  .el-select {
+    width: 100%;
+  }
+}
+
+.form-btn {
+  float: right;
+  display: flex;
+  justify-content: flex-end;
+  align-items: flex-end;
+
+  &.topStyle {
+    padding-top: 42px;
+  }
+}

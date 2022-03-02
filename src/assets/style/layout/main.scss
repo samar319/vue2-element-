@@ -1,0 +1,107 @@
+// layOut 样式文件
+.app-main {
+  height: 100vh;
+  overflow: hidden;
+  position: relative;
+  background-color: #f1f1f1;
+}
+
+.l-header {
+  position: absolute;
+  left: 0;
+  right: 0;
+  top: 0;
+  height: 60px;
+  background-color: #409eff;
+}
+
+.l-main {
+  position: absolute;
+  top: 60px;
+  bottom: 0;
+  right: 0;
+  left: 200px;
+  margin: 10px 8px;
+  transition: all 0.3s;
+  background-color: #ffffff;
+  &.openFlag {
+    left: 64px;
+  }
+}
+
+.l-aside {
+  position: absolute;
+  left: 0;
+  top: 60px;
+  width: 200px;
+  bottom: 0;
+  transition: all 0.3s;
+  background-color: #ffffff;
+  &.close {
+    width: 64px;
+  }
+}
+
+.l-header {
+  padding: 0 16px;
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+
+  .logo-wrapper {
+    cursor: pointer;
+    width: 200px;
+    height: 48px;
+
+    img {
+      width: 100%;
+      height: 100%;
+    }
+  }
+
+  .head-actions {
+    display: flex;
+    align-items: center;
+
+    .el-dropdown-link {
+      cursor: pointer;
+      user-select: none;
+      margin-left: 16px;
+      display: flex;
+      align-items: center;
+    }
+  }
+}
+
+.l-aside {
+  .el-menu {
+    border-right-color: transparent;
+    position: absolute;
+    left: 0;
+    right: 0;
+    top: 0;
+    bottom: 40px;
+    overflow-y: auto;
+    
+    &::-webkit-scrollbar {
+      display: none;
+    }
+  }
+  .action {
+    position: absolute;
+    left: 0;
+    right: 0;
+    bottom: 0;
+    height: 40px;
+    background-color: #f3f3f3;
+    text-align: center;
+    line-height: 40px;
+
+    i {
+      padding: 10px;
+      cursor: pointer;
+      font-weight: bold;
+      color: pink;
+    }
+  }
+}

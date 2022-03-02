@@ -1,0 +1,35 @@
+{
+  // 复制代码时格式化代码
+  "editor.formatOnPaste": true,
+  // 保存时格式化代码
+  "editor.formatOnSave": false,
+  "editor.codeActionsOnSave": {
+    "source.fixAll.eslint": true
+  },
+  // 项目中一些单词拼写报警告处理
+  "cSpell.words": ["vuex"],
+  // 使用vetur 格式化文件
+  "[vue]": {
+    "editor.defaultFormatter": "esbenp.prettier-vscode"
+  },
+  // 格式化默认使用prettier
+  "[html]": {
+    "editor.defaultFormatter": "esbenp.prettier-vscode"
+  },
+  "[javascript]": {
+    "editor.defaultFormatter": "esbenp.prettier-vscode"
+  },
+  "[typescript]": {
+    "editor.defaultFormatter": "esbenp.prettier-vscode"
+  },
+  "[json]": {
+    "editor.defaultFormatter": "esbenp.prettier-vscode"
+  },
+  "[scss]": {
+    "editor.defaultFormatter": "esbenp.prettier-vscode"
+  },
+  "vetur.format.defaultFormatter.css": "prettier",
+  "vetur.format.defaultFormatter.js": "prettier",
+  "vetur.format.defaultFormatter.scss": "prettier",
+  "vetur.format.defaultFormatter.html": "prettyhtml",
+}
